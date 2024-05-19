@@ -1,4 +1,5 @@
 from pydantic import BaseModel
-class Item(BaseModel):
+class Image(BaseModel):
     name: str
-    age: int
+    description: str
+    url :str

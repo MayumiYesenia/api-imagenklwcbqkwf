@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS apiimagenes;
+CREATE DATABASE apiimagenes CHARSET utf8mb4;
+USE apiimagenes;
+
+CREATE TABLE images (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    description VARCHAR(250) NOT NULL,
+    url VARCHAR(250)NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO images(name,description,url) VALUES('Jake','muy sincero','http://example.com/sample1.jpg');
+INSERT INTO images(name,description,url) VALUES('Mathew', 'le gusta correr','http://example.com/sample2.jpg');
+commit;
